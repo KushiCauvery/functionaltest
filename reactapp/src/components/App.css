@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  /* Container Styles */
+  div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  input, textarea {
+    background-color: #f9f9f9;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Test Cases Section */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  li:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #34495e;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  /* Button Styling */
+  button:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
+  }
+
+  /* Full-page overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Make sure it's on top of other elements */
+}
+
+/* Modal content */
+.loading-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Spinner styling */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
